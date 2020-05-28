@@ -1,0 +1,48 @@
+.repo-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  height: 400px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+
+  .details {
+    height: 70%;
+
+    & h5 {
+      font-size: 25px;
+    }
+  }
+
+  .counts {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-around;
+  }
+
+  .view-repo-btn {
+    box-sizing: border-box;
+    background-color: #2a265f;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 25px;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+  }
+}
+.repo-container:hover {
+  transform: scale(1.05);
+}
